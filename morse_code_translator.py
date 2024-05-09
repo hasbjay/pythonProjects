@@ -1,11 +1,11 @@
 #Rules for using this tool effectively
 """1 Enter what you would like to translate to (to English or to Morse Code) 2 If you are translating to English,
 then separate each word with a space (' ') 3 If you are translating to Morse Code, then separate each LETTER with a
-space (' ') and each WORD with a backslash (/)"""
+space (' ') and each WORD with a forward slash (/)"""
 
 print("""(1) Enter what you would like to translate to (to English or to Morse Code) \n\n(2) If you are translating to English, 
 then separate each word with a space (' ') \n\n(3) If you are translating to Morse Code, then separate each Morse code LETTER with a 
-space (' ') and each Morse Code WORD with a backslash (/)\n""")
+space (' ') and each Morse Code WORD with a forward slash (/)\n""")
 
 morse_code_as_key = {".-": "A", "-...": "B", "-.-.": "C", "-..": "D", ".": "E", "..-.": "F", "--.": "G",
                      "....": "H", "..": "I", ".---": "J", "-.-": "K", ".-..": "L", "--": "M", "-.": "N",
@@ -52,7 +52,5 @@ def ask_user_questions():
 
 
 print(ask_user_questions())
-
-run_program_again_request = input("Would you like to run the program again (y/n)? ").lower()
 
 print("The program terminated successfully!")
