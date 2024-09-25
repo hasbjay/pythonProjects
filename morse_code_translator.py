@@ -46,11 +46,25 @@ def ask_user_questions():
                     return "Please enter a valid character"
             return translated_word
         elif language_translating_to == 'exit':
-            break
+            user_response = ""
+            rerun_program(user_response)
         else:
             return "Please enter a valid option"
+        
+
+#rerun program
+user_response = ""
+def rerun_program(user_response):
+    user_response = input("Would you like to rerun the program? ").lower()
+    if user_response == "no":
+        pass
+    elif user_response == "yes":
+        ask_user_questions()
+    else:
+        print("I don't recognize your response. Please type in 'Yes' or 'No' ")
 
 
 print(ask_user_questions())
+print(rerun_program(user_response))
 
 print("The program terminated successfully!")
