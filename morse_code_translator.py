@@ -56,9 +56,9 @@ def ask_user_questions():
 user_response = ""
 def rerun_program(user_response):
     user_response = input("Would you like to rerun the program? ").lower()
-    if user_response == "no":
+    if user_response == "no" or user_response == "n":
         pass
-    elif user_response == "yes":
+    elif user_response == "yes" or user_response == "y" :
         ask_user_questions()
     else:
         print("I don't recognize your response. Please type in 'Yes' or 'No' ")
